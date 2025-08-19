@@ -1,4 +1,5 @@
 
+
 import discord
 from discord.ext import commands
 from discord import app_commands
@@ -19,7 +20,7 @@ class InfoCommands(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self.api_url = "http://raw.thug4ff.com/info"
-        self.generate_url = "https://generatethug.onrender.com/generate"
+        self.generate_url = "https://profile-generator.up.railway.app/api/profile"
         self.session = aiohttp.ClientSession()
         self.config_data = self.load_config()
         self.cooldowns = {}
